@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: AQUAMARINE;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.naoghuman.demo.application.ApplicationPresenter">
+    <children>
+        <SplitPane dividerPositions="0.33" layoutX="14.0" layoutY="71.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <items>
+                <SplitPane dividerPositions="0.5" orientation="VERTICAL">
+                    <items>
+                        <VBox>
+                            <children>
+                                <Label text="Projects">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <ListView fx:id="lvNavigationProjects" VBox.vgrow="ALWAYS" />
+                            </children>
+                            <padding>
+                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                            </padding>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label text="Samples">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <ListView fx:id="lvNavigationSamples" VBox.vgrow="ALWAYS" />
+                            </children>
+                            <padding>
+                                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                            </padding>
+                        </VBox>
+                    </items>
+                </SplitPane>
+                <TabPane fx:id="tpProjectPages" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab fx:id="tProject" closable="false" text="Project">
+                            <content>
+                                <WebView fx:id="wvProjectSinglePage" prefHeight="-1.0" prefWidth="-1.0" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tSample" closable="false" text="Sample">
+                            <content>
+                                <VBox fx:id="vbSamplePage" prefHeight="200.0" prefWidth="100.0" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tSourceCode" closable="false" text="SourceCode">
+                            <content>
+                                <WebView fx:id="wvSourceCodeSinglePage" prefHeight="-1.0" prefWidth="-1.0" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tJavaDoc" closable="false" text="JavaDoc">
+                            <content>
+                                <WebView fx:id="wvJavaDocSinglePage" prefHeight="-1.0" prefWidth="-1.0" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tCSS" closable="false" text="Css">
+                            <content>
+                                <WebView fx:id="wvCssSinglePage" prefHeight="-1.0" prefWidth="-1.0" />
+                            </content>
+                        </Tab>
+                    </tabs>
+                    <padding>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                    </padding>
+                </TabPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
