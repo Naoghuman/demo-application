@@ -18,6 +18,7 @@ package com.github.naoghuman.demo.libtag.libtagproject.overviewmodullibtagcore;
 
 import com.github.naoghuman.demo.template.annotation.Project;
 import com.github.naoghuman.demo.template.annotation.Sample;
+import com.github.naoghuman.demo.template.annotation.SampleType;
 
 /**
  *
@@ -28,7 +29,9 @@ import com.github.naoghuman.demo.template.annotation.Sample;
         description = "This sample shows an overiew from the modul Lib-Tag-Core.", // NOI18N
         /* javaDocURL = "[undefined]"; */
         name = "01 Overview from the modul Lib-Tag-Core", // NOI18N
+        /* overviewURL = "[undefined]", */
         project = @Project(name = "Lib-Tag"), // NOI18N
+        sampleType = SampleType.OVERVIEW,
         /* sourceCodeURL = "[undefined]"; */
         visible = true
 )

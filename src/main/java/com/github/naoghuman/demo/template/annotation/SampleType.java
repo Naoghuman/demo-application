@@ -14,26 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.github.naoghuman.demo.libtag.libtagproject.usagetagbuilder;
-
-import com.github.naoghuman.demo.template.annotation.Project;
-import com.github.naoghuman.demo.template.annotation.Sample;
+package com.github.naoghuman.demo.template.annotation;
 
 /**
  *
  * @author Naoghuman
  */
-@Sample(
-        /* cssURL = "[undefined]"; */
-        description = "This sample descripted the usage of the class com.github.naoghuman.lib.tag.core.TagBuilder.", // NOI18N
-        /* javaDocURL = "[undefined]"; */
-        name = "04 Usage from the class TagBuilder", // NOI18N
-        /* overviewURL = "[undefined]", */
-        project = @Project(name = "Lib-Tag"), // NOI18N
-        /* sampleType = SampleType.NORMAL, */
-        /* sourceCodeURL = "[undefined]"; */
-        visible = true
-)
-public class UsageTagBuilder {
+public enum SampleType {
+    
+    NORMAL,
+    OVERVIEW;
+    
+    public static boolean isNormal(SampleType sampleType) {
+        return sampleType.equals(NORMAL);
+    }
     
 }

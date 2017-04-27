@@ -28,7 +28,9 @@ import com.github.naoghuman.demo.template.annotation.Sample;
         description = "This sample descripted the usage of the class com.github.naoghuman.lib.tag.internal.DefaultTagRelation.", // NOI18N
         /* javaDocURL = "[undefined]"; */
         name = "05 Usage from the class DefaultTagRelation", // NOI18N
+        /* overviewURL = "[undefined]", */
         project = @Project(name = "Lib-Tag"), // NOI18N
+        /* sampleType = SampleType.NORMAL, */
         /* sourceCodeURL = "[undefined]"; */
         visible = true
 )
