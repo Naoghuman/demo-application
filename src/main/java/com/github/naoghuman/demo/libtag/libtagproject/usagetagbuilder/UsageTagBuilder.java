@@ -27,7 +27,7 @@ import com.github.naoghuman.demo.template.annotation.Sample;
         /* cssURL = "[undefined]"; */
         description = "This sample descripted the usage of the class com.github.naoghuman.lib.tag.core.TagBuilder.", // NOI18N
         /* javaDocURL = "[undefined]"; */
-        name = "04 Usage from the class TagBuilder", // NOI18N
+        name = "03 Usage from the class TagBuilder", // NOI18N
         /* overviewURL = "[undefined]", */
         project = @Project(name = "Lib-Tag"), // NOI18N
         /* sampleType = SampleType.NORMAL, */

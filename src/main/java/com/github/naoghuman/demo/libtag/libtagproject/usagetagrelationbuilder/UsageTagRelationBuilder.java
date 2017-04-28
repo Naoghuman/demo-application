@@ -27,7 +27,7 @@ import com.github.naoghuman.demo.template.annotation.Sample;
         /* cssURL = "[undefined]"; */
         description = "This sample descripted the usage of the class com.github.naoghuman.lib.tag.core.TagRelationBuilder.", // NOI18N
         /* javaDocURL = "[undefined]"; */
-        name = "06 Usage from the class TagRelationBuilder", // NOI18N
+        name = "05 Usage from the class TagRelationBuilder", // NOI18N
         /* overviewURL = "[undefined]", */
         project = @Project(name = "Lib-Tag"), // NOI18N
         /* sampleType = SampleType.NORMAL, */
