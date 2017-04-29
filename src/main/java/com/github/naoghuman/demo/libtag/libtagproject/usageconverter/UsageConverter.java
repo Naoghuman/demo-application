@@ -32,7 +32,7 @@ import com.github.naoghuman.demo.template.annotation.Sample;
         project = @Project(name = "Lib-Tag"), // NOI18N
         /* sampleType = SampleType.NORMAL, */
         /* sourceCodeURL = "[undefined]"; */
-        visible = true
+        visible = false
 )
 public class UsageConverter {
     
