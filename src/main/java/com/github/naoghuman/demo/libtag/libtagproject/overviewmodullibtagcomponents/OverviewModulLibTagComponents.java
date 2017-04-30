@@ -29,7 +29,7 @@ import com.github.naoghuman.demo.template.annotation.SampleType;
         description = "This sample shows an overiew from the modul Lib-Tag-Components.", // NOI18N
         /* javaDocURL = "[undefined]"; */
         name = "02 Overview from the modul Lib-Tag-Components", // NOI18N
-        /* overviewURL = "[undefined]", */
+        overviewURL = "https://github.com/Naoghuman/lib-tag/blob/master/lib-tag-components/README.md", // NOI18N
         project = @Project(name = "Lib-Tag"), // NOI18N
         sampleType = SampleType.OVERVIEW,
         /* sourceCodeURL = "[undefined]"; */
