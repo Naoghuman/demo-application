@@ -339,7 +339,7 @@ public class ApplicationPresenter implements Initializable, IRegisterActions {
             else {
                 LoggerFacade.getDefault().warn(this.getClass(), "No css-url is defined!"); // NOI18N
                 
-                wvCssPage.getEngine().loadContent(TemplateLoader.loadNoCssURLisDefinedTemplate());
+                wvCssPage.getEngine().loadContent(TemplateLoader.loadNoXyURLisDefinedTemplate(TemplateLoader.UrlType.CSS));
             }
         });
         
@@ -363,7 +363,7 @@ public class ApplicationPresenter implements Initializable, IRegisterActions {
             else {
                 LoggerFacade.getDefault().warn(this.getClass(), "No javadoc-url is defined!"); // NOI18N
                 
-                wvJavaDocPage.getEngine().loadContent(TemplateLoader.loadNoJavaDocURLisDefinedTemplate());
+                wvJavaDocPage.getEngine().loadContent(TemplateLoader.loadNoXyURLisDefinedTemplate(TemplateLoader.UrlType.JAVA_DOC));
             }
         });
         
@@ -387,7 +387,7 @@ public class ApplicationPresenter implements Initializable, IRegisterActions {
             else {
                 LoggerFacade.getDefault().warn(this.getClass(), "No overview-url is defined!"); // NOI18N
                 
-                wvOverviewPage.getEngine().loadContent(TemplateLoader.loadNoOverviewURLisDefinedTemplate());
+                wvOverviewPage.getEngine().loadContent(TemplateLoader.loadNoXyURLisDefinedTemplate(TemplateLoader.UrlType.OVERVIEW));
             }
         });
         
@@ -414,7 +414,7 @@ public class ApplicationPresenter implements Initializable, IRegisterActions {
             else {
                 LoggerFacade.getDefault().warn(this.getClass(), "No project-url is defined!"); // NOI18N
 
-                wvProjectPage.getEngine().loadContent(TemplateLoader.loadNoProjectURLisDefinedTemplate());
+                wvProjectPage.getEngine().loadContent(TemplateLoader.loadNoXyURLisDefinedTemplate(TemplateLoader.UrlType.PROJECT));
             }
         });
         
@@ -456,7 +456,7 @@ public class ApplicationPresenter implements Initializable, IRegisterActions {
             else {
                 LoggerFacade.getDefault().warn(this.getClass(), "No sourcecode-url is defined!"); // NOI18N
                 
-                wvSourceCodePage.getEngine().loadContent(TemplateLoader.loadNoSourceCodeURLisDefinedTemplate());
+                wvSourceCodePage.getEngine().loadContent(TemplateLoader.loadNoXyURLisDefinedTemplate(TemplateLoader.UrlType.SOURCE_CODE));
             }
         });
         
